@@ -1,0 +1,85 @@
+/* ==================== 基础重置与全局变量 ==================== */
+:root {
+  --color-text: #333;
+  --color-text-light: #666;
+  --color-text-muted: #999;
+  --color-brand: #5eb69c;
+  --color-brand-light: #eaf7f2;
+  --color-accent: #e26237;
+  --color-price: #af2f22;
+  --color-bg-soft: #f5f5f5;
+  --color-border: #e8e8e8;
+  --color-white: #fff;
+  --container-width: 1240px;
+  --transition-base: all 0.2s ease;
+}
+
+/* 去除常见标签默认的 margin 和 padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 设置网页统一的字体、颜色和最小宽度 */
+body {
+  min-width: var(--container-width);
+  font: 16px/1.5 "Microsoft YaHei", "Hiragino Sans GB", "Heiti SC",
+    "WenQuanYi Micro Hei", sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
+
+/* 去除列表默认样式 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 去除默认的倾斜效果 */
+em,
+i {
+  font-style: normal;
+}
+
+/* 链接默认样式 */
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+/* 图片默认块级显示，避免底部间隙 */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* 表单控件基础样式 */
+input {
+  border: none;
+  outline: none;
+  color: var(--color-text);
+  font: inherit;
+  background-color: transparent;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}

@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小兔鲜首页</title>
+    <!-- 网站图标 -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- 图标字体 -->
+    <link rel="stylesheet" href="./iconfont/iconfont.css" />
+    <!-- 基础样式、公共样式、页面样式 -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- 顶部快捷导航 -->
+    <div class="shortcut">
+      <div class="w">
+        <ul class="shortcut__list">
+          <li><a href="#">请先登录</a></li>
+          <li class="shortcut__line"></li>
+          <li><a href="#">免费注册</a></li>
+          <li class="shortcut__line"></li>
+          <li><a href="#">我的订单</a></li>
+          <li class="shortcut__line"></li>
+          <li><a href="#">会员中心</a></li>
+          <li class="shortcut__line"></li>
+          <li><a href="#">帮助中心</a></li>
+          <li class="shortcut__line"></li>
+          <li><a href="#">在线客服</a></li>
+          <li class="shortcut__line"></li>
+          <li>
+            <a href="#"><i class="iconfont icon-mobile-phone"></i> 手机版</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 页面头部 -->
+    <header class="header w">
+      <div class="logo">
+        <h1><a href="./index.html" title="小兔鲜儿">小兔鲜儿</a></h1>
+      </div>
+
+      <nav class="nav" aria-label="主导航">
+        <ul class="nav__list">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">生鲜</a></li>
+          <li><a href="#">美食</a></li>
+          <li><a href="#">餐厨</a></li>
+          <li><a href="#">电器</a></li>
+          <li><a href="#">居家</a></li>
+          <li><a href="#">洗护</a></li>
+          <li><a href="#">孕婴</a></li>
+          <li><a href="#">服装</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="search">
+          <i class="iconfont icon-search"></i>
+          <input type="text" placeholder="搜一搜" aria-label="搜索商品" />
+        </div>
+        <a class="cart" href="#" aria-label="购物车，当前有 2 件商品">
+          <span>2</span>
+          <i class="iconfont icon-cart-full"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 首屏入口区 -->
+      <section class="entry">
+        <div class="w entry__container">
+          <aside class="category-menu" aria-label="商品分类">
+            <ul>
+              <li>
+                <p>
+                  <a href="#">生鲜</a>
+                  <a href="#">水果</a>
+                  <a href="#">蔬菜</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+              <li>
+                <p>
+                  <a href="#">美食</a>
+                  <a href="#">烘焙</a>
+                  <a href="#">零食</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+              <li>
+                <p>
+                  <a href="#">美食</a>
+                  <a href="#">面点</a>
+                  <a href="#">干果</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+              <li>
+                <p>
+                  <a href="#">餐厨</a>
+                  <a href="#">厨具</a>
+                  <a href="#">收纳</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+              <li>
+                <p>
+                  <a href="#">电器</a>
+                  <a href="#">床品</a>
+                  <a href="#">四件套</a>
+                  <a href="#">被枕</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+              <li>
+                <p>
+                  <a href="#">居家</a>
+                  <a href="#">玩具</a>
+                  <a href="#">奶粉</a>
+                  <a href="#">辅食</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+              <li>
+                <p>
+                  <a href="#">洗护</a>
+                  <a href="#">洗发</a>
+                  <a href="#">美妆</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+              <li>
+                <p>
+                  <a href="#">服饰</a>
+                  <a href="#">女装</a>
+                  <a href="#">男装</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+              <li>
+                <p>
+                  <a href="#">杂货</a>
+                  <a href="#">户外</a>
+                  <a href="#">读书</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+              <li>
+                <p>
+                  <a href="#">品牌</a>
+                  <a href="#">品牌制造</a>
+                </p>
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 新鲜好物 -->
+      <section class="section fresh-section">
+        <div class="w">
+          <div class="section-header">
+            <h2><span>新鲜好物</span> 新鲜出炉 品质靠谱</h2>
+            <a class="section-more" href="#"
+              >查看全部 <i class="iconfont icon-arrow-right-bold"></i
+            ></a>
+          </div>
+          <div class="card-grid">
+            <ul class="feature-list">
+              <li class="feature-card">
+                <a href="#">
+                  <img src="./uploads/goods1.png" alt="KN95级莫兰迪色防护口罩" />
+                  <h3>KN95级莫兰迪色防护口罩你值得拥有</h3>
+                  <p><small>¥</small>79</p>
+                </a>
+              </li>
+              <li class="feature-card">
+                <a href="#">
+                  <img src="./uploads/goods2.png" alt="紫檀外独板三层普洱茶盒" />
+                  <h3>紫檀外独板三层普洱茶盒你值得拥有</h3>
+                  <p><small>¥</small>556</p>
+                </a>
+              </li>
+              <li class="feature-card">
+                <a href="#">
+                  <img src="./uploads/goods3.png" alt="法拉蒙高颜值记事本" />
+                  <h3>法拉蒙高颜值记事本可定制你值得拥有</h3>
+                  <p><small>¥</small>58</p>
+                </a>
+              </li>
+              <li class="feature-card">
+                <a href="#">
+                  <img src="./uploads/goods4.png" alt="科技布布艺沙发" />
+                  <h3>科技布布艺沙发你值得拥有</h3>
+                  <p><small>¥</small>3579</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 人气推荐 -->
+      <section class="section hot-section">
+        <div class="w">
+          <div class="section-header">
+            <h2><span>人气推荐</span> 人气爆款 不容错过</h2>
+          </div>
+          <div class="card-grid">
+            <ul class="feature-list">
+              <li class="feature-card feature-card--plain">
+                <a href="#">
+                  <img src="./uploads/recommend1.png" alt="特惠推荐" />
+                  <h3>特惠推荐</h3>
+                  <p>我猜得到 你的需要</p>
+                </a>
+              </li>
+              <li class="feature-card feature-card--plain">
+                <a href="#">
+                  <img src="./uploads/recommend2.png" alt="爆款推荐" />
+                  <h3>爆款推荐</h3>
+                  <p>人气好物推荐</p>
+                </a>
+              </li>
+              <li class="feature-card feature-card--plain">
+                <a href="#">
+                  <img src="./uploads/recommend3.png" alt="节日礼品专题" />
+                  <h3>节日礼品一站买全</h3>
+                  <p>编辑尽心整理推荐</p>
+                </a>
+              </li>
+              <li class="feature-card feature-card--plain">
+                <a href="#">
+                  <img src="./uploads/recommend4.png" alt="鲜花园艺" />
+                  <h3>鲜花园艺</h3>
+                  <p>给生活添加仪式感</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 服饰商品区 -->
+      <section class="section goods-section">
+        <div class="w">
+          <div class="goods-section__header">
+            <h2>服饰</h2>
+            <div class="goods-section__actions">
+              <ul class="goods-section__tabs">
+                <li><a href="#">热门</a></li>
+                <li><a href="#">女装</a></li>
+                <li><a href="#">奢侈品</a></li>
+                <li><a href="#">裤装</a></li>
+                <li><a href="#">衬衫</a></li>
+                <li><a href="#">T恤</a></li>
+                <li><a href="#">内衣</a></li>
+              </ul>
+              <a class="section-more" href="#"
+                >查看更多 <i class="iconfont icon-arrow-right-bold"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="goods-layout">
+            <a href="#" class="goods-layout__banner">
+              <img src="./uploads/colthes_left.png" alt="服饰主推海报" />
+            </a>
+            <ul class="product-list">
+              <li class="product-card">
+                <a href="#">
+                  <img src="./uploads/clothes1.png" alt="男女情侣抗菌夜视休闲跑鞋" />
+                  <h3 class="ellipsis">男女情侣抗菌夜视休闲跑鞋</h3>
+                  <p>36/37/38码</p>
+                  <p>新款服饰</p>
+                  <p><small>¥</small>719.00</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="#">
+                  <img src="./uploads/clothes2.png" alt="男女情侣抗菌夜视休闲跑鞋" />
+                  <h3 class="ellipsis">男女情侣抗菌夜视休闲跑鞋</h3>
+                  <p>36/37/38码</p>
+                  <p>新款服饰</p>
+                  <p><small>¥</small>719.00</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="#">
+                  <img src="./uploads/clothes3.png" alt="男女情侣抗菌夜视休闲跑鞋" />
+                  <h3 class="ellipsis">男女情侣抗菌夜视休闲跑鞋</h3>
+                  <p>36/37/38码</p>
+                  <p>新款服饰</p>
+                  <p><small>¥</small>719.00</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="#">
+                  <img src="./uploads/clothes4.png" alt="男女情侣抗菌夜视休闲跑鞋" />
+                  <h3 class="ellipsis">男女情侣抗菌夜视休闲跑鞋</h3>
+                  <p>36/37/38码</p>
+                  <p>新款服饰</p>
+                  <p><small>¥</small>719.00</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="#">
+                  <img src="./uploads/clothes5.png" alt="男女情侣抗菌夜视休闲跑鞋" />
+                  <h3 class="ellipsis">男女情侣抗菌夜视休闲跑鞋</h3>
+                  <p>36/37/38码</p>
+                  <p>新款服饰</p>
+                  <p><small>¥</small>719.00</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="#">
+                  <img src="./uploads/clothes6.png" alt="男女情侣抗菌夜视休闲跑鞋" />
+                  <h3 class="ellipsis">男女情侣抗菌夜视休闲跑鞋</h3>
+                  <p>36/37/38码</p>
+                  <p>新款服饰</p>
+                  <p><small>¥</small>719.00</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="#">
+                  <img src="./uploads/clothes7.png" alt="男女情侣抗菌夜视休闲跑鞋" />
+                  <h3 class="ellipsis">男女情侣抗菌夜视休闲跑鞋</h3>
+                  <p>36/37/38码</p>
+                  <p>新款服饰</p>
+                  <p><small>¥</small>719.00</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="#">
+                  <img src="./uploads/clothes8.png" alt="男女情侣抗菌夜视休闲跑鞋" />
+                  <h3 class="ellipsis">男女情侣抗菌夜视休闲跑鞋</h3>
+                  <p>36/37/38码</p>
+                  <p>新款服饰</p>
+                  <p><small>¥</small>719.00</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 最新专题 -->
+      <section class="section topic-section">
+        <div class="w">
+          <div class="goods-section__header">
+            <h2>最新专题</h2>
+            <div class="goods-section__actions">
+              <a class="section-more" href="#"
+                >查看更多 <i class="iconfont icon-arrow-right-bold"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="topic-list">
+            <ul>
+              <li class="topic-card">
+                <a href="#">
+                  <img src="./uploads/topic1.png" alt="春季家居专题" />
+                  <div class="topic-card__meta">
+                    <p>
+                      <i class="iconfont icon-fabulous"></i>
+                      <span class="topic-card__count">1200</span>
+                      <i class="iconfont icon-browse"></i>
+                      <span class="topic-card__count">1800</span>
+                    </p>
+                    <p><i class="iconfont icon-comment"></i>246</p>
+                  </div>
+                </a>
+              </li>
+              <li class="topic-card">
+                <a href="#">
+                  <img src="./uploads/topic2.png" alt="春日餐厨专题" />
+                  <div class="topic-card__meta">
+                    <p>
+                      <i class="iconfont icon-fabulous"></i>
+                      <span class="topic-card__count">1200</span>
+                      <i class="iconfont icon-browse"></i>
+                      <span class="topic-card__count">1800</span>
+                    </p>
+                    <p><i class="iconfont icon-comment"></i>246</p>
+                  </div>
+                </a>
+              </li>
+              <li class="topic-card">
+                <a href="#">
+                  <img src="./uploads/topic3.png" alt="家居收纳专题" />
+                  <div class="topic-card__meta">
+                    <p>
+                      <i class="iconfont icon-fabulous"></i>
+                      <span class="topic-card__count">1200</span>
+                      <i class="iconfont icon-browse"></i>
+                      <span class="topic-card__count">1800</span>
+                    </p>
+                    <p><i class="iconfont icon-comment"></i>246</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 页面底部 -->
+    <footer class="footer">
+      <div class="w">
+        <!-- 口号区 -->
+        <div class="slogan">
+          <ul>
+            <li>
+              <h5 class="one"></h5>
+              <p>价格亲民</p>
+            </li>
+            <li>
+              <h5 class="two"></h5>
+              <p>物流快捷</p>
+            </li>
+            <li>
+              <h5 class="three"></h5>
+              <p>品质新鲜</p>
+            </li>
+            <li>
+              <h5 class="four"></h5>
+              <p>售后无忧</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 服务信息区 -->
+        <div class="service">
+          <div class="service-left">
+            <dl>
+              <dt>购物指南</dt>
+              <dd>购物流程</dd>
+              <dd>支付方式</dd>
+              <dd>售后规则</dd>
+            </dl>
+            <dl>
+              <dt>配送方式</dt>
+              <dd>配送运费</dd>
+              <dd>配送范围</dd>
+              <dd>配送时间</dd>
+            </dl>
+            <dl>
+              <dt>关于我们</dt>
+              <dd>平台规则</dd>
+              <dd>联系我们</dd>
+              <dd>问题反馈</dd>
+            </dl>
+            <dl>
+              <dt>售后服务</dt>
+              <dd>售后政策</dd>
+              <dd>退款说明</dd>
+              <dd>取消订单</dd>
+            </dl>
+            <dl>
+              <dt>服务热线</dt>
+              <dd>在线客服 <i class="iconfont icon-customer-service"></i></dd>
+              <dd>客服电话 400-0000-000</dd>
+              <dd>工作时间 周一至周日 8:00-18:00</dd>
+            </dl>
+          </div>
+
+          <div class="service-right">
+            <figure>
+              <img src="./images/app.png" alt="小兔鲜 APP 下载二维码" />
+              <figcaption>APP 下载二维码</figcaption>
+            </figure>
+            <figure>
+              <img src="./images/wechat.png" alt="小兔鲜微信公众号二维码" />
+              <figcaption>微信公众号</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 版权信息 -->
+        <div class="copyright">
+          <p>
+            <a href="#">关于我们</a> |
+            <a href="#">帮助中心</a> |
+            <a href="#">售后服务</a> |
+            <a href="#">配送与验收</a> |
+            <a href="#">商务合作</a> |
+            <a href="#">搜索推荐</a> |
+            <a href="#">友情链接</a>
+          </p>
+          <p>Copyright 小兔鲜</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

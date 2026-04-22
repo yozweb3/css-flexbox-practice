@@ -1,0 +1,260 @@
+/* ==================== 首页首屏入口区 ==================== */
+.entry {
+  height: 500px;
+  background-color: var(--color-bg-soft);
+}
+
+.entry__container {
+  height: 100%;
+  background: url(../uploads/banner1.png) no-repeat center top;
+}
+
+.category-menu {
+  width: 250px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+
+.category-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 12px 0 29px;
+  color: var(--color-white);
+}
+
+.category-menu li:hover {
+  background-color: var(--color-brand);
+}
+
+.category-menu p {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-menu a {
+  color: var(--color-white);
+  font-size: 14px;
+}
+
+.category-menu a:first-child {
+  font-size: 16px;
+}
+
+/* ==================== 页面通用区块 ==================== */
+.section {
+  padding-top: 40px;
+}
+
+.section-header,
+.goods-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 82px;
+}
+
+.section-header h2,
+.goods-section__header h2 {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.section-header h2 span {
+  margin-right: 35px;
+  color: var(--color-text);
+  font-size: 33px;
+}
+
+.goods-section__header h2 {
+  color: var(--color-text);
+  font-size: 30px;
+}
+
+.section-more {
+  color: #a1a1a1;
+}
+
+.section-more:hover {
+  color: var(--color-brand);
+}
+
+.card-grid ul,
+.topic-list ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ==================== 新鲜好物 / 人气推荐 ==================== */
+.feature-list {
+  gap: 0;
+}
+
+.feature-card {
+  width: 304px;
+  height: 404px;
+  background-color: #eef9f4;
+  color: #aa2113;
+  font-size: 22px;
+  text-align: center;
+}
+
+.feature-card a {
+  display: block;
+  height: 100%;
+}
+
+.feature-card img {
+  width: 304px;
+  height: 304px;
+}
+
+.feature-card h3 {
+  margin: 18px 0 15px;
+  padding: 0 25px;
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.feature-card p small {
+  font-size: 18px;
+}
+
+.feature-card--plain {
+  background-color: var(--color-white);
+}
+
+.feature-card--plain p {
+  color: #a1a1a1;
+  font-size: 18px;
+}
+
+.hot-section {
+  padding-bottom: 20px;
+}
+
+/* ==================== 商品推荐区 ==================== */
+.goods-section__actions {
+  display: flex;
+  align-items: center;
+}
+
+.goods-section__tabs {
+  display: flex;
+  gap: 13px;
+  margin-right: 65px;
+}
+
+.goods-section__tabs a {
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.goods-section__tabs a:hover {
+  background-color: var(--color-brand);
+  color: var(--color-white);
+}
+
+.goods-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods-layout__banner {
+  width: 248px;
+  height: 610px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 968px;
+  height: 610px;
+}
+
+.product-card {
+  width: 242px;
+  height: 305px;
+  padding: 10px 21px;
+  background-color: var(--color-white);
+}
+
+.product-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 19px;
+}
+
+.product-card img {
+  width: 200px;
+  height: 180px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.product-card p {
+  color: var(--color-text-light);
+}
+
+.product-card p:last-child {
+  margin-top: 10px;
+  color: var(--color-price);
+  font-size: 22px;
+}
+
+.product-card p:last-child small {
+  font-size: 16px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ==================== 最新专题 ==================== */
+.topic-section {
+  padding-bottom: 60px;
+}
+
+.topic-card {
+  flex: 1;
+  height: 355px;
+}
+
+.topic-card + .topic-card {
+  margin-left: 12px;
+}
+
+.topic-card a {
+  display: block;
+}
+
+.topic-card img {
+  width: 100%;
+}
+
+.topic-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 67px;
+  padding: 0 15px;
+  color: var(--color-text-light);
+  font-size: 14px;
+}
+
+.topic-card__count {
+  margin-right: 20px;
+}

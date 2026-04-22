@@ -1,0 +1,242 @@
+/* ==================== 页面公共布局 ==================== */
+.w {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* ==================== 顶部快捷导航 ==================== */
+.shortcut {
+  height: 52px;
+  background-color: var(--color-text);
+}
+
+.shortcut__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 52px;
+}
+
+.shortcut__list a {
+  color: var(--color-white);
+}
+
+.shortcut__list a:hover {
+  color: var(--color-brand);
+}
+
+.shortcut__line {
+  width: 1px;
+  height: 16px;
+  margin: 0 15px;
+  background-color: var(--color-text-muted);
+}
+
+.shortcut__list li i {
+  margin-right: 4px;
+  font-size: 20px;
+  vertical-align: -2px;
+}
+
+.shortcut__list li:first-child a {
+  color: var(--color-brand);
+}
+
+/* ==================== 页头区域 ==================== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 132px;
+  background-color: var(--color-white);
+}
+
+.logo {
+  width: 200px;
+  height: 88px;
+}
+
+.logo h1,
+.logo a {
+  width: 100%;
+  height: 100%;
+}
+
+.logo a {
+  display: block;
+  overflow: hidden;
+  background: url(../images/logo.png) no-repeat center / contain;
+  text-indent: -9999px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav__list a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav__list a:hover {
+  color: var(--color-brand);
+  border-bottom-color: var(--color-brand);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.search {
+  position: relative;
+}
+
+.search i {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  color: #ccc;
+  font-size: 20px;
+  transform: translateY(-50%);
+}
+
+.search input {
+  width: 170px;
+  height: 40px;
+  padding-left: 28px;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.search input::placeholder {
+  color: #ccc;
+}
+
+.cart {
+  position: relative;
+  display: block;
+  padding-right: 15px;
+}
+
+.cart span {
+  position: absolute;
+  top: -5px;
+  right: 2px;
+  min-width: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.cart i {
+  font-size: 40px;
+}
+
+/* ==================== 页面底部 ==================== */
+.footer {
+  height: 580px;
+  background-color: var(--color-bg-soft);
+}
+
+.slogan {
+  height: 178px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.slogan ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.slogan li {
+  display: flex;
+  align-items: center;
+}
+
+.slogan h5 {
+  width: 58px;
+  height: 58px;
+  background-image: url(../images/sprite.png);
+}
+
+.slogan li p {
+  margin-left: 20px;
+  font-size: 28px;
+}
+
+.slogan .two {
+  background-position: 0 -58px;
+}
+
+.slogan .three {
+  background-position: 0 -116px;
+}
+
+.slogan .four {
+  background-position: 0 -174px;
+}
+
+/* 服务模块 */
+.service {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.service-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 84px;
+}
+
+.service-left dt {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.service-left dd {
+  margin: 10px 0;
+  color: #969696;
+}
+
+.service-left i {
+  color: var(--color-brand);
+}
+
+.service-right {
+  display: flex;
+  gap: 55px;
+  text-align: center;
+}
+
+.service-right figcaption {
+  margin-top: 10px;
+  color: #969696;
+}
+
+/* 版权模块 */
+.copyright {
+  margin-top: 100px;
+  color: #969696;
+  line-height: 30px;
+  text-align: center;
+}
+
+.copyright a {
+  color: #969696;
+}
+
+.copyright a:hover {
+  color: var(--color-brand);
+}
